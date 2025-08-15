@@ -60,7 +60,6 @@ class EODFileLoader(AbstractLoader):
         self.offset_str = self.timeframes[tf]
 
         self.end_date = end_date
-        self.date_column = config.get("DATE_COLUMN", "Date")
         self.date_format = config.get("DATE_FORMAT", None)
 
         if end_date:
@@ -111,7 +110,6 @@ class EODFileLoader(AbstractLoader):
                 period=self.period,
                 end_date=self.end_date,
                 chunk_size=self.chunk_size,
-                date_column=self.date_column,
                 date_format=self.date_format,
             )
         except IndexError:
