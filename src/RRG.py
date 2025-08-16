@@ -57,9 +57,11 @@ class RRG:
         self.text_alpha = 0.6
         self.line_alpha = 0.5
 
-        self.minimum_data_length = max(
-            self.window * 2 + self.tail_count,
-            self.window + self.period + self.tail_count,
+        # 2x Window periods for moving averages (RS & ROC)
+        # + Additional period for ROC base period calculation
+        # + tail count
+        self.minimum_data_length = (
+            self.window * 2 + max(self.window, self.period) + self.tail_count
         )
 
         loader_class = utils.get_loader_class(config)
