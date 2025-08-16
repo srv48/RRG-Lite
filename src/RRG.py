@@ -373,8 +373,7 @@ class RRG:
         - Add 100 to serve as a base value
         """
 
-        pos = min(len(rs_ratio), self.period)
-        base_rs = rs_ratio.shift(pos)
+        base_rs = rs_ratio.shift(self.period)
 
         # Rate of change (ROC)
         rs_roc = ((rs_ratio / base_rs) - 1) * 100
