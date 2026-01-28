@@ -460,12 +460,15 @@ marker, and label
 
         if self.help_plt is None:
             self.help_plt = self.axs.text(
-                100,
-                100,
+                0.5,
+                0.5,
                 self.help_str,
                 color="black",
                 backgroundcolor="white",
                 fontweight="bold",
+                transform=self.axs.transAxes,  # relative to plot area
+                bbox=dict(boxstyle="round,pad=1", facecolor="white"),
+                va="center",
             )
         else:
             self.help_plt.remove()
