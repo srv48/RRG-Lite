@@ -44,6 +44,7 @@ class RRG:
 
         self.window = config.get("WINDOW", 14)
         self.period = config.get("PERIOD", 52)
+        self.base_date = config.get("BASE_DATE")
         self.config = config
 
         # Keep track of data points, lines and text annotations
@@ -373,7 +374,10 @@ class RRG:
         - Add 100 to serve as a base value
         """
 
-        base_rs = rs_ratio.shift(self.period)
+        if self.base_date:
+            base_rs = rs_ratio.at[self.base_date]
+        else:
+            base_rs = rs_ratio.iloc[-self.period]
 
         # Rate of change (ROC)
         rs_roc = ((rs_ratio / base_rs) - 1) * 100
