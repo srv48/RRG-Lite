@@ -4,17 +4,11 @@ RRG-Lite is a Python CLI tool for displaying Relative Rotation graph (RRG) chart
 
 **Supports Python >= 3.8**
 
-## UPDATE - 18th Aug 2025: 
+## 28th Jan 2026 - v1.0.12-beta.1 Announcement
 
-I have added a new feature branch [feat/sma_rs_crossover](https://github.com/BennyThadikaran/RRG-Lite/tree/feat/sma_rs_crossover) which uses the RS crossover of 10 and 30 SMA as the base. I found the earlier calculation was too volatile and unreliable. I am still tweaking the code but I'm happy with the result so far.
+RS Momentum (Rate of Change) now uses a static base date for more consistent and comparable results. Users can set a custom base date via the new `BASE_DATE` option (ISO format date). If not provided, it defaults to the existing `PERIOD`-based base date. 
 
-Once complete, I will set this as default and update the main branch with an config option to switch to the old calculation.
-
-If you wish to try it out, clone the repo as usual and run the below code. This is create the feature branch locally so you can experiment and run it.
-
-`git checkout -b feat/sma_rs_crossover origin/feat/sma_rs_crossover`
-
-Perform the rest of the setup as usual. (see below for install and setup)
+See changes in [v1.0.12-beta.1](https://github.com/BennyThadikaran/RRG-Lite/releases/tag/v1.0.12-beta.1).
 
 ![RRG-Lite Charts](https://res.cloudinary.com/doyu4uovr/image/upload/s--iD51VT-2--/f_auto/v1731069111/RRG-Lite/rrg-lite-main_ggsdbr.png)
 
