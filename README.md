@@ -10,6 +10,8 @@ RS Momentum (Rate of Change) now uses a static base date for more consistent and
 
 See changes in [v1.0.12-beta.1](https://github.com/BennyThadikaran/RRG-Lite/releases/tag/v1.0.12-beta.1).
 
+See updated [WIKI docs](https://github.com/BennyThadikaran/RRG-Lite/wiki/Setup#notes-on-base_date-added-in-v1012) on BASE_DATE config
+
 ![RRG-Lite Charts](https://res.cloudinary.com/doyu4uovr/image/upload/s--iD51VT-2--/f_auto/v1731069111/RRG-Lite/rrg-lite-main_ggsdbr.png)
 
 An RRG (Relative Rotation Graph) chart is used to analyze the relative strength and momentum of multiple stocks or sectors compared to a benchmark (usually a market index like the S&P 500 or Nifty 50).
