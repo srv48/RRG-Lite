@@ -72,17 +72,21 @@ class RRG:
         self.help_plt = None
 
         self.help_str = """
-        Keyboard Shortcuts
+## Keyboard Shortcuts
 
-        delete - Remove all lines and annotations
-        a         - Toggle text annotations
-        t          - Toggle tail lines
-        h         - Print this help text
+[Delete] — Remove all lines and annotations
+[A]      — Toggle text annotations
+[T]      — Toggle tail lines
+[H]      — Display this help text
 
-        Mouse interaction
+## When tail lines are enabled:
 
-        Left click on Marker to toggle visibility of 
-        tail, markers and labels
+Use the ← and → arrow keys to cycle through dates.
+
+## Mouse interaction
+
+Left-click a marker — to toggle the visibility of its tail,
+marker, and label
         """
 
         # Map keyboard shortcuts to their relevant handlers
