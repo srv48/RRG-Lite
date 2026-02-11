@@ -1,3 +1,7 @@
+# user defined
+# src/*.json
+# src/*.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -132,6 +136,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# user defined
-src/*.json
-src/*.csv
+

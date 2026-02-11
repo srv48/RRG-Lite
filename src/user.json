@@ -1,0 +1,11 @@
+{
+  "DATA_PATH": "/Users/souravb/Info/Technical Analysis/MarketSmith/RRG/eod2/src/eod2_data/daily/",
+  "WATCHLIST_FILE": "/Users/souravb/Info/Technical Analysis/MarketSmith/RRG/RRG-Lite/src/sectors.csv",
+  "BENCHMARK": "nifty 50",
+  "PERIOD": 28,
+  "WINDOW": 21,
+  "LOADER": "EODFileLoader",
+  "DEFAULT_TF": "daily",
+  "DATE_COLUMN": "Date",
+  "DATE_FORMAT": null
+}
